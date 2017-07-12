@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Projekt Hotel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+  <link rel="shortcut icon" href="images/favicon.bmp"> 
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li class="active"><a href="index.html">hotel</a></li> |
+				<li><a href="rooms.html">pokoje</a></li> |
+				<li><a href="reservation.html">rezerwacja</a></li> |
+				<li><a href="activities.html">galeria</a></li> |
+				<li><a href="contact.html">kontakt</a></li>
+				<li><a href="indexANG.html">ENG</a></li>
+				<div class="clear"></div>
+			</ul>
+			
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">hotel</a></li> 
+				<li><a href="rooms.html">pokoje</a></li> 
+				<li><a href="reservation.html">rezerwacja</a></li> 
+				<li><a href="activities.html">galeria</a></li> 
+				<li><a href="contact.html">kontakt</a></li>
+				<li><a href="indexANG.html">ENG</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="details">
+			<h2>Trochę więcej o Nas</h2>
+			<div class="det_pic">
+				  <img src="images/det_pic.jpg" alt="" />
+			</div>
+			<div class="det_text">
+				<p class="para">Hotel Projekt - legendarny hotel w Warszawie
+
+Pięciogwiazdkowy Projekt to bez wątpienia najlepszy, owiany legendą luksusu międzywojnia, hotel w Warszawoe. Mieści się w pięknym budynku w samym sercu starej części miasta. Ponad stuletnią tradycję przywołuje autentyczna, historyczna posadzka, eksponowana pod wielką szybą w hallu głównym.
+
+Okres największej prosperity Projektu przypadł na lata międzywojenne XX wieku, kiedy to hotel był ulubionym miejscem spotkań przemysłowców, bywalców salonów i artystycznej bohemy tamtych czasów.
+
+Przywołujące klimat lat 30. ubiegłego wieku wnętrza harmonijnie łączą się ze współczesnością. Najszlachetniejsze materiały, subtelne dekoracje, egzotyczne drewno w specjalnie zaprojektowanych dla Monopolu meblach, orientalne dywany, jedwabie oraz marmury użyte do wystroju tworzą wyjątkowy klimat. Szczególne wrażenie robią wszechobecne, w większości czarnobiałe, artystyczne fotogramy. W odważnych dizajnersko wnętrzach są znakomitym, nostalgicznym kontrapunktem, pozwalającym na sentymentalną wędrówkę po Śląsku, którego już nie ma.
+
+Wszystkie pomieszczenia hotelu są klimatyzowane. W pomieszczeniach ogólnodostępnych oraz we wszystkich pokojach  można korzystać z  nieodpłatnego dostępu do bezprzewodowego Internetu (WiFi).
+
+Goście hotelowi mogą bezpłatnie korzystać ze znajdujących się w podziemiach: stylowego basenu, dwóch saun (suchej i parowej) oraz siłowni.
+
+W Monopolu są dwie restauracje: polska i włoska, z tradycyjnie znakomitą w obiektach grupy hotelowej Likus kuchnią oraz kawiarnia i dwa bary. 
+
+Dla firm zainteresowanych organizacją spotkań biznesowych są dostępne trzy sale konferencyjne. W ramach konferencji: przerwy kawowe, lunche, kolacje. W hotelu organizowane są także wesela, bankiety, aukcje, pokazy.
+
+Zapraszamy również na zakupy do Pasażu handlowego Monopol.
+ </p>
+			</div>
+	<center>		<div class="det_text">Wellness & Spa Hotel Projekt </br> </center>
+			<p class="para"> 
+tel. +48 32 782 81 00 </br>
+tel. +48 32 782 81 01 </br>   
+
+Godziny otwarcia klubu: </br>
+Poniedziałek -  Piątek : 06.00 - 22.00</br>
+Sobota -  Niedziela oraz Święta:  08.00 - 20.00</br>
+
+W Hotelu Projekt działa, na powierzchni bez mała 1200 m2, bogato wyposażony fitness club. </br>
+</br>
+Klub oferuje możliwość korzystania z:</br>
+•siłowni </br>
+•studia cardio</br> 
+•sal do zajęć grupowych (aerobik i zajęcia rowerowe) </br>
+•basenu </br>
+•sauny suchej</br> 
+•łaźni parowej </br>
+•gabinetu masażu </br>
+</br>
+W klubie fitness prowadzone są przez doświadczonych trenerów następujące zajęcia:</br>
+•fitness-aerobik </br>
+•step dance </br>
+•lift it </br>
+•body express </br>
+•core express </br>
+•strech express </br>
+•pilates, yoga </br>
+•body shape </br>
+•cycling (zajęcia rowerowe) </br>
+•aqua (zajęcia w wodzie) </br>
+</br>
+Goście hotelowi mogą korzystać z klubu bezpłatnie oprócz zajęć z instruktorem i masażu, które są dostępne za opłatą.</br>
+</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>		
+<!--start footer -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>© All rights reserved | Igor Siwek & Tadeusz Sikora|Na podstawie RadissonBlu </a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">główna</a></li>
+					<li><a href="rooms.html">pokoje</a></li>
+					<li><a href="reservation.html">rezerwacja</a></li>
+					<li><a href="contact.html">kontakt</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="https://www.facebook.com/RadissonBlu.Hotel.Krakow"></a></li>
+					<li><a class="icon2" href="https://mobile.twitter.com/radissonblu"></a></li>
+					
+					
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>

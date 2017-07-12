@@ -1,0 +1,168 @@
+
+<html>
+<head>
+<title>Projekt Hotel | Rezerwacja</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<!---strat-date-piker---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+
+		  <script>
+				  $(function() {
+				    $( "#datepicker,#datepicker1" ).datepicker();
+				  });
+		  </script>
+<!---/End-date-piker---->
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="shortcut icon" href="images/favicon.bmp"> 
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="indexANG.html">hotel</a></li> |
+				<li><a href="roomsANG.html">rooms</a></li> |
+				<li class="active"><a href="reservationANG.html">reservation</a></li> |
+				<li><a href="activitiesANG.html">gallery</a></li> |
+				<li><a href="contactANG.html">contact</a></li>|
+				<li><a href="index.html">PL</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+			
+					<form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+							
+							</div>		
+						</div>		
+					</form>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="indexANG.html">hotel</a></li> 
+				<li><a href="roomsANG.html">rooms</a></li> |
+				<li class="active"><a href="reservationANG.html">reservation</a></li> |
+				<li><a href="activitiesANG.html">gallery</a></li> |
+				<li><a href="contactANG.html">contact</a></li>|
+				<li><a href="index.html">PL</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="res_online">
+			<h4>Reservation</h4>
+			<p class="para">With online booking you get a 10% discount.</p>
+		</div>			
+		
+		
+		
+			<div class="span_of_2">
+		<div id="formularz">
+</h3>
+<form method="post" action="rez.php">
+        
+    <label>Name and surname</label>
+    <input name="name" placeholder="John Doe" size="100">
+            
+    <label>Email</label>
+    <input name="email" type="email" placeholder="Name@mail.com" size="100">
+	
+	<label>Room type</label>
+    <input name="pokój" placeholder="Superior/Business +/Royal Suite" size="100">
+	
+	<label>Number of Adults</label>
+    <input name="liczbad"  placeholder="0,1,2,3,4,5" size="100">
+	
+	<label>Number of people under 16</label>
+    <input name="liczbal"  placeholder="1,2,3,4,5" size="100">
+	
+	<label>Arrival Date</label>
+    <input name="datap"  placeholder="31/08/2015" size="100">
+	
+	<label>Departure Date</label>
+    <input name="dataw"  placeholder="31/08/2015" size="100">
+	
+            
+    <label>Message</label>
+    <textarea name="message" placeholder="Write your message here" style="height: 200px; font-size:12px;"> </textarea>
+            
+    <input id="submit" name="submit" type="submit" value="Send">
+
+        
+</form>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>© All rights reserved | Igor Siwek & Tadeusz Sikora|Based on RadissonBlu </a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="indexANG.html">Home</a></li>
+					<li><a href="roomsANG.html">Rooms</a></li>
+					<li><a href="reservationANG.html">Reservation</a></li>
+					<li><a href="contactANG.html">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>

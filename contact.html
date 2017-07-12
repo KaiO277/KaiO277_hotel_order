@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Projekt Hotel | Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+ <link rel="shortcut icon" href="images/favicon.bmp"> 
+</head>
+
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">hotel</a></li> |
+			<li><a href="rooms.html">pokoje</a></li> |
+				<li><a href="reservation.html">rezerwacja</a></li> |
+				<li><a href="activities.html">galeria</a></li> |
+				<li class="active"><a href="contact.html">kontakt</a></li>|
+				<li><a href="indexANG.html">ENG</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+					<form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+							</div>		
+						</div>		
+					</form>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">hotel</a></li> 
+				<li><a href="rooms.html">pokoje</a></li> |
+				<li><a href="reservation.html">rezerwacja</a></li> |
+				<li><a href="activities.html">galeria</a></li> | 
+				<li><a href="contact.html">kontakt</a></li>|
+				<li><a href="indexANG.html">ENG</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="contact">				
+				<div class="contact_left">
+					<div class="contact_info">
+			    	 
+			    	 		<div class="map">
+					   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.3714273665028!2d20.996209215540627!3d52.23663687976152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc88f009fd3b%3A0x85104c81c6055831!2sRadisson+Blu+Centrum+Hotel+Warsaw!5e0!3m2!1spl!2spl!4v1449699644712" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					   		</div>	</div>
+      			<div class="company_address">
+				     	<h3>Proejkt Hotel*****</h3>
+						<p>plac Zawiszy</p>
+						<p>02-025 Warszawa</p>
+						<p>Poland</p>
+				   		<p>Telefon:(00) 222 666 444</p>
+				 	 	<p>Email: <a href="mailto:igor.siwek@carturismo.com">igor.siwek@carturismo.com</a></p>
+						<p>Biuro Marketingu: +48 42 90 750</p>
+				   		<p>Follow on: <a href="https://www.facebook.com/RadissonBlu.Hotel.Krakow">Facebook</a>, <a href="https://mobile.twitter.com/radissonblu">Twitter</a></p>
+						<p>Recepcja jest czynna całą dobę</p>
+				   </div>
+				</div>				
+				
+
+
+
+<div class="contact_right">
+<div id="formularz">
+</h3>
+<form method="post" action="kontakt.php">
+        
+    <label>Imię i nazwisko</label>    
+    <input name="name" placeholder="Jan Kowalski" style="width:200">   
+            
+    <label>Email</label>
+    <input name="email" type="email" placeholder="Twój@mail.pl" style="width:200">   
+           
+    <label>Wiadomość</label>
+    <textarea name="message" placeholder="Napisz tu wiadomość"   style="height: 200px; font-size:12px;"> </textarea>
+            
+    <input id="submit" name="submit" type="submit" value="Wyślij">
+
+        
+</form>
+</div>
+
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+
+				
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="https://www.facebook.com/RadissonBlu.Hotel.Krakow"></a></li>
+					<li><a class="icon2" href="https://mobile.twitter.com/radissonblu"></a></li>
+					
+					
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+
+
+</html>
